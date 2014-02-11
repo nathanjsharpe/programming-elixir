@@ -11,4 +11,8 @@ defmodule MyList do
   defp _caesar([], _n, result), do: Enum.reverse result
   defp _caesar([head | tail], n, result) when head + n > ?z, do: _caesar(tail, n, [(?a + head + n - ?z) | result])
   defp _caesar([head | tail], n, result) when head + n <= 'z', do: _caesar(tail, n, [head + n | result] )
+
+  def span(n, n), do: [n]
+  def span(from, to), do: [from | span(from + 1, to)]
+
 end
