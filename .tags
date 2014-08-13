@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Factorial	06_modules-and-named-functions/factorial1.exs	/^defmodule Factorial do$/;"	m
+Guesser	06_modules-and-named-functions/guess.exs	/^defmodule Guesser do$/;"	m
+MyList	07_lists-and-recursion/my_list.exs	/^defmodule MyList do$/;"	m
+Sum	06_modules-and-named-functions/sum.exs	/^defmodule Sum do$/;"	m
+Sum	07_lists-and-recursion/sum.exs	/^defmodule Sum do$/;"	m
+Times	06_modules-and-named-functions/times.exs	/^defmodule Times do$/;"	m
+Wtf	06_modules-and-named-functions/gcd.exs	/^defmodule Wtf do$/;"	m
+_caesar	07_lists-and-recursion/my_list.exs	/^  defp _caesar([], _n, result), do: Enum.reverse result$/;"	f
+_caesar	07_lists-and-recursion/my_list.exs	/^  defp _caesar([head | tail], n, result) when head + n <= 'z', do: _caesar(tail, n, [head + n | result] )$/;"	f
+_caesar	07_lists-and-recursion/my_list.exs	/^  defp _caesar([head | tail], n, result) when head + n > ?z, do: _caesar(tail, n, [(?a + head + n - ?z) | result])$/;"	f
+_guess	06_modules-and-named-functions/guess.exs	/^  defp _guess(a, g, _l..h) when g < a do$/;"	f
+_guess	06_modules-and-named-functions/guess.exs	/^  defp _guess(a, g, l.._h) when g > a do$/;"	f
+_guess	06_modules-and-named-functions/guess.exs	/^  defp _guess(n, n, _r) do$/;"	f
+_max	07_lists-and-recursion/my_list.exs	/^  defp _max([], m), do: m$/;"	f
+_max	07_lists-and-recursion/my_list.exs	/^  defp _max([head | tail], m) when head <= m, do: _max(tail, m)$/;"	f
+_max	07_lists-and-recursion/my_list.exs	/^  defp _max([head | tail], m) when head > m, do: _max(tail, head)$/;"	f
+_sum	07_lists-and-recursion/sum.exs	/^  def _sum([]), do: 0$/;"	f
+_sum	07_lists-and-recursion/sum.exs	/^  def _sum([head | tail]), do: head + _sum(tail)$/;"	f
+caesar	07_lists-and-recursion/my_list.exs	/^  def caesar(list, n), do: _caesar(list, n, [])$/;"	f
+double	06_modules-and-named-functions/times.exs	/^  def double(n), do: n * 2$/;"	f
+gcd	06_modules-and-named-functions/gcd.exs	/^  def gcd(x, 0), do: x$/;"	f
+gcd	06_modules-and-named-functions/gcd.exs	/^  def gcd(x, y), do: gcd(y, rem(x, y))$/;"	f
+guess	06_modules-and-named-functions/guess.exs	/^  def guess(a, l..h), do: _guess(a, div(h - l + 1, 2), l..h)$/;"	f
+mapsum	07_lists-and-recursion/my_list.exs	/^  def mapsum([], _fun), do: 0$/;"	f
+mapsum	07_lists-and-recursion/my_list.exs	/^  def mapsum([head | tail], fun), do: fun.(head) + mapsum(tail, fun)$/;"	f
+max	07_lists-and-recursion/my_list.exs	/^  def max([head | tail]), do: _max(tail, head)$/;"	f
+of	06_modules-and-named-functions/factorial1.exs	/^  def of(0), do: 1$/;"	f
+of	06_modules-and-named-functions/factorial1.exs	/^  def of(n), do: n * of(n-1)$/;"	f
+of	06_modules-and-named-functions/sum.exs	/^  def of(1), do: 1$/;"	f
+of	06_modules-and-named-functions/sum.exs	/^  def of(n), do: n + of(n - 1)$/;"	f
+of	07_lists-and-recursion/sum.exs	/^  def of(list), do: _sum(list)$/;"	f
+quadruple	06_modules-and-named-functions/times.exs	/^  def quadruple(n), do: double(double(n))$/;"	f
+triple	06_modules-and-named-functions/times.exs	/^  def triple(n), do: n * 3$/;"	f
